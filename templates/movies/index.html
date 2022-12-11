@@ -12,7 +12,7 @@
 
     <h1>Listado de Peliculas</h1>
 
-    <a href="/create">Crear Pelicula</a>
+    <a href="/create" class="btn btn-primary">Crear Pelicula</a>
 
     <table class="table table-light">
         <thead>
@@ -35,8 +35,8 @@
                 <td>{{ movie[8] }}</td>
 
                 <td>
-                    <a href="/edit/{{ movie[0] }}">Editar</a>
-                    <a href="/delete/{{ movie[0] }}">Eliminar</a>
+                    <a href="/edit/{{ movie[0] }}" class="btn btn-primary">Editar</a>
+                    <a href="/delete/{{ movie[0] }}" class="btn btn-primary">Eliminar</a>
                 </td>
             </tr>
             {% endfor %}
